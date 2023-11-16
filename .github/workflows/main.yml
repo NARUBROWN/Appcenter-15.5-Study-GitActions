@@ -50,4 +50,5 @@ jobs:
             cp download/build/libs/*.jar deploy;
             find deploy -name "*pain*" | xargs rm;
             rm -rf download;
+            sleep 3
             sh deploy/deploy.sh;
