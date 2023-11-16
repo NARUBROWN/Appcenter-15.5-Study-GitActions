@@ -51,4 +51,3 @@ jobs:
             find deploy -name "*pain*" | xargs rm
             cd deploy
             sh deploy.sh
-            rm -rf download
