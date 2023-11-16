@@ -46,8 +46,8 @@ jobs:
           port: ${{ secrets.PORT }}
           script_stop: true
           script: |
-            cd 
-            cp download/build/libs/*.jar deploy
-            find deploy -name "*pain*" | xargs rm
-            cd deploy
-            sh deploy.sh
+            cd;
+            cp download/build/libs/*.jar deploy;
+            find deploy -name "*pain*" | xargs rm;
+            rm -rf download;
+            sh deploy/deploy.sh;
