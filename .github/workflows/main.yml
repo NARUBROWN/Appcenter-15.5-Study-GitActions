@@ -47,4 +47,8 @@ jobs:
           script_stop: true
           script: |
             cd 
+            cp download/build/libs/*.jar deploy
+            find deploy -name "*pain*" | xargs rm
+            rm -rf download
+            cd deploy
             sh deploy.sh
